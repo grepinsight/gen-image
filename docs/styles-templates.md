@@ -9,14 +9,22 @@ Each preset wraps your prompt with instructions tuned for a kind of explanatory 
 | `educational-cartoon` (default) | friendly, clear illustrations of a concept |
 | `mnemonic` | memorable visual wordplay for language/vocab learning |
 | `diagram-alternative` | an illustrative stand-in for a dry diagram |
+| `first-person` | an immersive "you are there" POV scene at the decision moment |
 | `custom` | no preset wrapping; your prompt is used verbatim |
 
 ```bash
 gen-image "Technical concept..."   --style educational-cartoon --output img.png
 gen-image "Visual wordplay..."     --style mnemonic            --output vocab.png
 gen-image "System architecture..." --style diagram-alternative --output diagram.png
+gen-image "Trading desk at midnight, a screen reading -50%..." --style first-person --output scene.png
 gen-image --list-styles
 ```
+
+The `first-person` preset renders a photorealistic point-of-view photograph: the viewer's hands at
+the bottom of the frame, foreground props (a screen with the key readout, a notebook with the
+question), and tense decision-moment lighting. You supply the subject; the preset supplies the POV
+framing and the moment-of-realization mood. Because it leans on legible on-screen text, keep the
+text-capable model selected (the default `gemini-3-pro-image-preview`).
 
 ## Templates
 
