@@ -11,6 +11,8 @@ class StylePreset(str, Enum):
     MNEMONIC = "mnemonic"
     DIAGRAM_ALTERNATIVE = "diagram-alternative"
     FIRST_PERSON = "first-person"
+    MANGA_STRIP = "manga-strip"
+    VINTAGE_BLUEPRINT = "vintage-blueprint"
     CUSTOM = "custom"
 
 
@@ -70,6 +72,36 @@ STYLE_DEFINITIONS: Dict[StylePreset, Dict[str, str]] = {
             "shallow depth of field). Any on-screen and on-paper text should be legible and "
             "specific. Put the viewer inside the moment of realization, not observing it from "
             "the outside.\n\n"
+        ),
+    },
+    StylePreset.MANGA_STRIP: {
+        "name": "Manga Strip",
+        "purpose": "Step-by-step educational storytelling",
+        "characteristics": "2x4 panel comic grid, sequential narrative, clear reading order",
+        "best_for": "Workflows, procedures, before/after sequences, walkthroughs",
+        "prompt_prefix": (
+            "[Style: Educational manga strip - sequential panels]\n\n"
+            "Compose as a clean comic strip on a 2x4 grid of equal panels with visible "
+            "gutters, read left-to-right then top-to-bottom. Each panel advances one step of "
+            "the narrative, with a consistent character or object carried across panels for "
+            "continuity. Flat, friendly line art with a limited color palette. Keep any panel "
+            "captions or labels short, legible, and in clear sans-serif. The sequence should "
+            "read as a self-explanatory walkthrough even without prose.\n\n"
+        ),
+    },
+    StylePreset.VINTAGE_BLUEPRINT: {
+        "name": "Vintage Blueprint",
+        "purpose": "Inventions, underlying principles, and design rationale",
+        "characteristics": "Patent-style technical drawing, aged paper, callouts and annotations",
+        "best_for": "History of a technology, how-it-works cross-sections, why-this-design",
+        "prompt_prefix": (
+            "[Style: Vintage patent blueprint - technical draftsmanship]\n\n"
+            "Render as an antique patent-style technical drawing: precise line work on aged "
+            "blueprint or cream parchment, fine hatching and cross-section views. Add numbered "
+            "callout leaders and small handwritten-style annotation labels naming the parts. "
+            "Include a title-block aesthetic in a corner. Monochrome or duotone (blueprint blue, "
+            "or sepia ink on cream). The drawing should explain the mechanism and the rationale "
+            "behind the design, like a figure from an old patent filing.\n\n"
         ),
     },
     StylePreset.CUSTOM: {

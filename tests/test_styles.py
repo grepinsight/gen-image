@@ -44,3 +44,29 @@ class TestFirstPersonStyle:
 
     def test_listed_in_styles_output(self):
         assert "first-person" in list_styles()
+
+
+class TestMangaStripStyle:
+    def test_constructed_from_string(self):
+        assert StylePreset("manga-strip") is StylePreset.MANGA_STRIP
+
+    def test_prefix_encodes_panel_grid(self):
+        prefix = get_style_prompt_prefix(StylePreset.MANGA_STRIP).lower()
+        assert "panel" in prefix
+        assert "grid" in prefix
+
+    def test_listed_in_styles_output(self):
+        assert "manga-strip" in list_styles()
+
+
+class TestVintageBlueprintStyle:
+    def test_constructed_from_string(self):
+        assert StylePreset("vintage-blueprint") is StylePreset.VINTAGE_BLUEPRINT
+
+    def test_prefix_encodes_patent_draftsmanship(self):
+        prefix = get_style_prompt_prefix(StylePreset.VINTAGE_BLUEPRINT).lower()
+        assert "patent" in prefix
+        assert "blueprint" in prefix or "parchment" in prefix
+
+    def test_listed_in_styles_output(self):
+        assert "vintage-blueprint" in list_styles()

@@ -29,7 +29,7 @@ tuned for material that teaches.** It trades breadth for taste.
 
 | | Thin OpenAI CLIs | Obsidian plugins | aichat / `llm` | **gen-image** |
 |---|---|---|---|---|
-| Purpose-tuned style presets | ✗ raw | ✗ raw | ✗ raw | ✓ educational / mnemonic / diagram / first-person |
+| Purpose-tuned style presets | ✗ raw | ✗ raw | ✗ raw | ✓ educational / mnemonic / diagram / first-person / manga / blueprint |
 | Reusable templates (variable substitution) | ✗ | ✗ | ✗ | ✓ |
 | Cost discipline (estimate, budget cap, history, stats, dry-run) | mostly ✗ | ✗ | partial | ✓ first-class |
 | Scriptable CLI | ✓ | ✗ GUI-locked | ✓ | ✓ |
@@ -55,7 +55,7 @@ the tools above serve you better.
 
 - **Two providers**: Google Gemini (default) and OpenAI, selectable via config.
 - **Style presets** built for explanation: `educational-cartoon`, `mnemonic`,
-  `diagram-alternative`, `first-person`, `custom`.
+  `diagram-alternative`, `first-person`, `manga-strip`, `vintage-blueprint`, `custom`.
 - **Templates** with variable substitution for repeatable prompts (e.g. vocab mnemonics).
 - **Cost-aware**: per-image cost estimates, monthly budget limits, generation history.
 - **Interactive mode**, a TOML config, and `--dry-run` for zero-cost previews.

@@ -3,6 +3,15 @@
 All notable changes to gen-image are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com); this project uses semantic versioning.
 
+## [0.5.0]: 2026-06-28
+
+### Added
+- Two style presets: `manga-strip` (2x4 sequential panel grid for step-by-step
+  walkthroughs) and `vintage-blueprint` (patent-style technical drawing for
+  inventions, mechanisms, and design rationale). The CLI is now the single source
+  of truth for the full preset catalog (`--list-styles`), so agent skills can
+  reference styles by name instead of re-defining them.
+
 ## [0.4.3]: 2026-06-28
 
 ### Added
