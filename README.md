@@ -8,6 +8,49 @@ It works anywhere you want images on disk. If you keep an [Obsidian](https://obs
 (or any Markdown notes), gen-image can also print and copy a ready-to-paste `![[wikilink]]` for
 the file, but that integration is entirely optional.
 
+## Why gen-image?
+
+There are plenty of ways to call an image model from a terminal. They cluster into three groups,
+and gen-image deliberately sits in the gap between them:
+
+- **Thin DALL·E/OpenAI CLIs** ([dallecli](https://github.com/raiyanyahya/dallecli),
+  [openai-cli-art](https://github.com/ghostofpokemon/openai-cli-art), the official `openai` CLI)
+  are raw passthroughs: prompt in, PNG out. Single provider, no opinion about *what* you're
+  making, no cost tracking, no reuse.
+- **Obsidian plugins** ([AI Assistant](https://github.com/qgrail/obsidian-ai-assistant),
+  [obsidian-ai-images](https://github.com/microtower00/obsidian-ai-images)) are convenient but
+  GUI-locked inside the editor, not scriptable, and have no budget discipline.
+- **Mega multi-provider LLM CLIs** ([aichat](https://github.com/sigoden/aichat), `llm`) do
+  everything, so image generation is an afterthought bolted onto a chat pipeline with no domain
+  tuning.
+
+gen-image's job is narrower and sharper: **opinionated, cost-aware, scriptable image generation
+tuned for material that teaches.** It trades breadth for taste.
+
+| | Thin DALL·E CLIs | Obsidian plugins | aichat / `llm` | **gen-image** |
+|---|---|---|---|---|
+| Purpose-tuned style presets | ✗ raw | ✗ raw | ✗ raw | ✓ educational / mnemonic / diagram / first-person |
+| Reusable templates (variable substitution) | ✗ | ✗ | ✗ | ✓ |
+| Cost discipline (estimate, budget cap, history, stats, dry-run) | mostly ✗ | ✗ | partial | ✓ first-class |
+| Scriptable CLI | ✓ | ✗ GUI-locked | ✓ | ✓ |
+| Multi-provider, image-focused | ✗ OpenAI only | mixed | ✓ kitchen-sink | ✓ Gemini + OpenAI, curated |
+| PKM output without lock-in | ✗ | ✗ lock-in | ✗ | ✓ optional wikilink |
+
+The three things nothing else combines:
+
+1. **Style presets are baked-in prompt engineering, not passthrough.** `--style educational-cartoon`
+   encodes a tested prompt for memorable, text-free explanatory art. See [`GALLERY/`](GALLERY/GALLERY.md)
+   for the same concept rendered across every preset.
+2. **Cost is a feature.** Per-image estimates, monthly budget caps, a history log, `--stats`, and
+   `--dry-run` mean you can run it daily without dreading the bill.
+3. **CLI, not plugin.** Runs in cron, scripts, and any editor; the Obsidian wikilink is convenience,
+   never a requirement.
+
+The honest tradeoff: the moat is taste, not technology. A determined user could paste a good prompt
+into any thin CLI and approximate the presets. The value is in the curation, the cost habits, and
+the learning-focused defaults being there by default. If you want raw breadth or in-editor clicking,
+the tools above serve you better.
+
 ## Highlights
 
 - **Two providers**: Google Gemini (default) and OpenAI, selectable via config.

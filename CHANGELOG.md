@@ -3,6 +3,14 @@
 All notable changes to gen-image are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com); this project uses semantic versioning.
 
+## [0.4.1]: 2026-06-28
+
+### Changed
+- README: added a "Why gen-image?" section positioning the tool against thin DALL·E CLIs, Obsidian
+  plugins, and mega multi-provider LLM CLIs, with a comparison table and an honest moat-is-taste
+  caveat. Makes the value prop (opinionated, cost-aware, scriptable image generation tuned for
+  learning material) explicit rather than implied.
+
 ## [0.4.0]: 2026-06-28
 
 ### Added
