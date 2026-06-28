@@ -3,6 +3,14 @@
 All notable changes to gen-image are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com); this project uses semantic versioning.
 
+## [0.4.3]: 2026-06-28
+
+### Added
+- README: "Companion: Claude Code / agent skill" section pointing to the
+  [gen-image plugin](https://github.com/grepinsight/insight-agent-marketplace/tree/main/plugins/gen-image),
+  an agent skill that drives this CLI from Claude Code (natural-language prompts, style selection,
+  parallel batch generation, output verification) with install instructions.
+
 ## [0.4.2]: 2026-06-28
 
 ### Added

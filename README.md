@@ -198,6 +198,29 @@ Wikilink:
 - If the output file already exists, gen-image auto-increments (`file-1.png`, `file-2.png`, …).
 - The `![[wikilink]]` is convenience for Obsidian/Markdown users and can be disabled in config.
 
+## Companion: Claude Code / agent skill
+
+There's a companion **agent skill** that drives this CLI from inside Claude Code (and other
+[`skills`](https://github.com/vercel-labs/skills)-compatible agents):
+[`gen-image` in the insight marketplace](https://github.com/grepinsight/insight-agent-marketplace/tree/main/plugins/gen-image).
+
+It's a thin orchestration layer on top of the CLI: you ask in natural language ("make me 5 images
+showing the OAuth flow"), and the skill picks a sensible style, writes good prompts, generates
+batches in parallel, verifies the outputs, and hands back ready-to-paste image links. The CLI does
+the generation, cost tracking, and provider work; the skill does the prompting and orchestration.
+
+```bash
+# Claude Code
+/plugin marketplace add grepinsight/insight-agent-marketplace
+/plugin install gen-image@insight
+
+# Any skills-compatible agent
+npx skills add grepinsight/insight-agent-marketplace -s gen-image -g -y
+```
+
+The skill requires this `gen-image` CLI on your `PATH` (see [Install](#install) above); installing
+the skill does not install the CLI.
+
 ## Development
 
 ```bash
