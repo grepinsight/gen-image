@@ -1,7 +1,7 @@
 # gen-image
 
 **Generate educational, illustrative images from the command line** using OpenAI
-(`gpt-image-2`, DALL·E 3, …) or Google Gemini image models. One command turns a prompt into a
+(`gpt-image-2`, …) or Google Gemini image models. One command turns a prompt into a
 saved PNG, with style presets and reusable templates tuned for learning material.
 
 It works anywhere you want images on disk. If you keep an [Obsidian](https://obsidian.md) vault

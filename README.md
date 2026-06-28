@@ -1,7 +1,7 @@
 # gen-image
 
 Generate **educational, illustrative images from the command line** using OpenAI
-(`gpt-image-2`, DALL·E 3, …) or Google Gemini image models. One command turns a prompt into a
+(`gpt-image-2`, …) or Google Gemini image models. One command turns a prompt into a
 saved PNG, with style presets and reusable templates tuned for learning material.
 
 It works anywhere you want images on disk. If you keep an [Obsidian](https://obsidian.md) vault
@@ -13,7 +13,7 @@ the file, but that integration is entirely optional.
 There are plenty of ways to call an image model from a terminal. They cluster into three groups,
 and gen-image deliberately sits in the gap between them:
 
-- **Thin DALL·E/OpenAI CLIs** ([dallecli](https://github.com/raiyanyahya/dallecli),
+- **Thin OpenAI image CLIs** ([dallecli](https://github.com/raiyanyahya/dallecli),
   [openai-cli-art](https://github.com/ghostofpokemon/openai-cli-art), the official `openai` CLI)
   are raw passthroughs: prompt in, PNG out. Single provider, no opinion about *what* you're
   making, no cost tracking, no reuse.
@@ -27,7 +27,7 @@ and gen-image deliberately sits in the gap between them:
 gen-image's job is narrower and sharper: **opinionated, cost-aware, scriptable image generation
 tuned for material that teaches.** It trades breadth for taste.
 
-| | Thin DALL·E CLIs | Obsidian plugins | aichat / `llm` | **gen-image** |
+| | Thin OpenAI CLIs | Obsidian plugins | aichat / `llm` | **gen-image** |
 |---|---|---|---|---|
 | Purpose-tuned style presets | ✗ raw | ✗ raw | ✗ raw | ✓ educational / mnemonic / diagram / first-person |
 | Reusable templates (variable substitution) | ✗ | ✗ | ✗ | ✓ |
@@ -171,8 +171,7 @@ gen-image --stats                # cost statistics
 
 ### OpenAI
 
-- **Models**: `gpt-image-2`, `gpt-image-1.5`, `gpt-image-1`, `gpt-image-1-mini`,
-  `dall-e-3` (legacy)
+- **Models**: `gpt-image-2`, `gpt-image-1.5`, `gpt-image-1`, `gpt-image-1-mini`
 - **Cost**: $0.04 (standard) / $0.08 (HD)
 - **Key**: `OPENAI_API_KEY`
 

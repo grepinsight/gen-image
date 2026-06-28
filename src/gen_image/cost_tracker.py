@@ -31,7 +31,7 @@ class CostTracker:
         output_path: str,
         cost: float,
         provider: str = "openai",
-        model: str = "dall-e-3",
+        model: str = "gpt-image-2",
         quality: str = "standard",
         size: str = "1024x1024",
         template: Optional[str] = None,
@@ -167,7 +167,7 @@ class CostTracker:
                 details_parts.append(f"{prompt}...")
 
             provider = entry.get("provider", "openai")
-            model = entry.get("model", "dall-e-3")
+            model = entry.get("model", "gpt-image-2")
             quality = entry.get("quality", "standard")
             size = entry.get("size", "1024x1024")
             details_parts.append(f"{provider}/{model}")

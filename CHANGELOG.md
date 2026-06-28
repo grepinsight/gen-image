@@ -3,10 +3,21 @@
 All notable changes to gen-image are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com); this project uses semantic versioning.
 
+## [0.4.2]: 2026-06-28
+
+### Added
+- GitHub Actions CI workflow (`.github/workflows/ci.yml`): runs ruff lint + the pytest suite on
+  every push and PR to `main`, across Python 3.11/3.12/3.13 via uv.
+
+### Removed
+- All references to OpenAI's DALL·E models, which are now deprecated/EOL. Dropped `dall-e-3` from
+  the `--list-models` output, the README/docs provider tables, and internal default labels; the
+  OpenAI provider now documents only the `gpt-image` family.
+
 ## [0.4.1]: 2026-06-28
 
 ### Changed
-- README: added a "Why gen-image?" section positioning the tool against thin DALL·E CLIs, Obsidian
+- README: added a "Why gen-image?" section positioning the tool against thin OpenAI image CLIs, Obsidian
   plugins, and mega multi-provider LLM CLIs, with a comparison table and an honest moat-is-taste
   caveat. Makes the value prop (opinionated, cost-aware, scriptable image generation tuned for
   learning material) explicit rather than implied.

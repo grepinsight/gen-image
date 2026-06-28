@@ -12,8 +12,7 @@ and per-provider model with the same config.
 
 ## OpenAI
 
-- **Models**: `gpt-image-2`, `gpt-image-1.5`, `gpt-image-1`, `gpt-image-1-mini`,
-  `dall-e-3` (legacy)
+- **Models**: `gpt-image-2`, `gpt-image-1.5`, `gpt-image-1`, `gpt-image-1-mini`
 - **Cost**: $0.04 (standard) / $0.08 (HD)
 - **Key**: `OPENAI_API_KEY`
 

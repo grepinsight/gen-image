@@ -41,7 +41,6 @@ AVAILABLE_MODELS = {
         ("gpt-image-1.5", "Strong quality, prior flagship"),
         ("gpt-image-1", "Standard"),
         ("gpt-image-1-mini", "Cost-effective"),
-        ("dall-e-3", "Legacy, EOL May 2026"),
     ],
 }
 

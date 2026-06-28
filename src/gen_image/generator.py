@@ -1,4 +1,4 @@
-"""Image generation backend using OpenAI DALL-E 3."""
+"""Image generation backend using OpenAI image models (gpt-image)."""
 
 import os
 from pathlib import Path
@@ -15,7 +15,7 @@ console = Console()
 
 
 class ImageGenerator:
-    """Handles image generation using OpenAI DALL-E 3."""
+    """Handles image generation using OpenAI image models (gpt-image)."""
 
     def __init__(self, api_key: Optional[str] = None, model: str = "gpt-image-1"):
         """Initialize generator with API key."""
@@ -105,7 +105,7 @@ class ImageGenerator:
 
             image_data = response.data[0]
 
-            # Save image (gpt-image models return b64_json, dall-e returns url)
+            # Save image (gpt-image models return b64_json; some models return a url)
             if output_path:
                 if image_data.b64_json:
                     import base64
