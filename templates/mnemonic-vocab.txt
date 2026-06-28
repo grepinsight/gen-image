@@ -1,0 +1,21 @@
+# For language learning mnemonic images
+
+[Style: Mnemonic - absurd and memorable]
+
+Create a memorable mnemonic image for the word "{{word}}" ({{romaji}}).
+
+Meaning: {{meaning}}
+
+Visual concept: {{concept}}
+
+The image should:
+- Use visual wordplay connecting pronunciation to meaning
+- Include surprising/unexpected elements
+- Be emotionally engaging (humor, surprise)
+- Help create a strong memory association between "{{romaji}}" and "{{meaning}}"
+
+Technical requirements:
+- No text in the image
+- Absurd enough to be memorable but clear enough to be instructive
+- Bright, vibrant colors
+- One central memorable hook

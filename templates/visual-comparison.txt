@@ -1,0 +1,26 @@
+# For A vs B comparison visualizations
+
+[Style: Educational cartoon - split composition]
+
+Create a side-by-side visual comparison showing the difference between {{concept_a}} and {{concept_b}}.
+
+Left side ({{concept_a}}):
+{{description_a}}
+
+Right side ({{concept_b}}):
+{{description_b}}
+
+Key difference to emphasize: {{key_difference}}
+
+The image should:
+- Use split composition (left vs right)
+- Color-code each side ({{color_a}} for left, {{color_b}} for right)
+- Make the key difference visually obvious
+- Include visual metaphors for each concept
+
+Technical requirements:
+- Clear dividing line between the two sides
+- Consistent style across both sides
+- No text in the image
+- Simple, clear visual language
+- Bright colors (#51cf66, #4dabf7, #ffd43b palette)

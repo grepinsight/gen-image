@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# personal sample output (not for publication)
+GALLERY/
+
+# mkdocs build output
+site/
+
+# local key store
+.env

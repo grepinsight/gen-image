@@ -1,0 +1,20 @@
+# For technical concept illustrations using visual metaphors
+
+[Style: Educational cartoon - bright, vibrant colors]
+
+Create a memorable educational illustration showing {{concept}}.
+
+Visual metaphor: {{metaphor}}
+
+The image should:
+- Use {{primary_color}} as the dominant color
+- Include these elements: {{key_elements}}
+- Convey the feeling of {{emotion}}
+
+Technical requirements:
+- Use bright colors (#51cf66 green, #4dabf7 blue, #ffd43b yellow palette)
+- Simple, uncluttered composition
+- Clear visual metaphors
+- No text in the image
+- Slightly humorous but instructive
+- One surprising element for memorability

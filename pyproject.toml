@@ -1,0 +1,57 @@
+[project]
+name = "gen-image"
+version = "0.3.0"
+description = "Generate educational, illustrative images from the command line with OpenAI or Google Gemini."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "grepinsight", email = "grepinsight@gmail.com" }]
+keywords = ["image-generation", "openai", "gemini", "cli", "education", "obsidian"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "openai>=1.0.0",
+    "google-genai>=1.0.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "toml>=0.10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/grepinsight/gen-image"
+Repository = "https://github.com/grepinsight/gen-image"
+Issues = "https://github.com/grepinsight/gen-image/issues"
+
+[project.scripts]
+gen-image = "gen_image.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
