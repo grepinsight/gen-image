@@ -1,6 +1,6 @@
 [project]
 name = "gen-image"
-version = "0.3.0"
+version = "0.4.0"
 description = "Generate educational, illustrative images from the command line with OpenAI or Google Gemini."
 readme = "README.md"
 requires-python = ">=3.11"

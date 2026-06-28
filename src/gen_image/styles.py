@@ -10,6 +10,7 @@ class StylePreset(str, Enum):
     EDUCATIONAL_CARTOON = "educational-cartoon"
     MNEMONIC = "mnemonic"
     DIAGRAM_ALTERNATIVE = "diagram-alternative"
+    FIRST_PERSON = "first-person"
     CUSTOM = "custom"
 
 
@@ -51,6 +52,24 @@ STYLE_DEFINITIONS: Dict[StylePreset, Dict[str, str]] = {
             "Use hierarchical layout with color-coded components. "
             "Include flow indicators (arrows, connections). "
             "Preserve spatial relationships. Simple, professional style.\n\n"
+        ),
+    },
+    StylePreset.FIRST_PERSON: {
+        "name": "First-Person POV",
+        "purpose": "Immersive 'you are there' decision-moment scenes",
+        "characteristics": "POV camera, hands at frame bottom, legible readouts, tense lighting",
+        "best_for": "Lead-with-WHY scenarios, the moment of realization, experiential detail",
+        "prompt_prefix": (
+            "[Style: First-person POV photograph - immersive and photoreal]\n\n"
+            "Render as a photorealistic first-person point-of-view photograph, as if the "
+            "viewer's own eyes are the camera. The viewer's hands rest at the bottom of the "
+            "frame (on a desk, keyboard, steering wheel, or holding the relevant object). "
+            "Include the foreground props the viewer would actually see: a screen or readout "
+            "showing the key numbers/output, and a notebook or printout with the question "
+            "being asked. Use tense decision-moment lighting (late evening, screen glow, "
+            "shallow depth of field). Any on-screen and on-paper text should be legible and "
+            "specific. Put the viewer inside the moment of realization, not observing it from "
+            "the outside.\n\n"
         ),
     },
     StylePreset.CUSTOM: {

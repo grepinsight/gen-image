@@ -3,6 +3,14 @@
 All notable changes to gen-image are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com); this project uses semantic versioning.
 
+## [0.4.0]: 2026-06-28
+
+### Added
+- New `first-person` style preset: an immersive, photoreal first-person POV scene (hands at the
+  frame bottom, legible on-screen readouts, decision-moment lighting) that drops the viewer inside
+  the moment of realization. Use it for "lead with WHY" scenarios and experiential illustrations:
+  `gen-image "..." --style first-person`. Previously this had to be hand-written via `--style custom`.
+
 ## [0.3.0]: 2026-06-28
 
 ### Changed

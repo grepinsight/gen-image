@@ -12,7 +12,7 @@ the file, but that integration is entirely optional.
 
 - **Two providers**: Google Gemini (default) and OpenAI, selectable via config.
 - **Style presets** built for explanation: `educational-cartoon`, `mnemonic`,
-  `diagram-alternative`, `custom`.
+  `diagram-alternative`, `first-person`, `custom`.
 - **Templates** with variable substitution for repeatable prompts (e.g. vocab mnemonics).
 - **Cost-aware**: per-image cost estimates, monthly budget limits, generation history.
 - **Interactive mode**, a TOML config, and `--dry-run` for zero-cost previews.
@@ -76,6 +76,7 @@ gen-image "A cartoon librarian locking a book in a safe" --output ownership.png
 gen-image "Technical concept..." --style educational-cartoon --output img.png   # default
 gen-image "Visual wordplay..."   --style mnemonic            --output vocab.png
 gen-image "System architecture..." --style diagram-alternative --output diagram.png
+gen-image "Late-night trading desk, a screen reading -50%..." --style first-person --output scene.png
 gen-image --list-styles
 ```
 
