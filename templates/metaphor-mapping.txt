@@ -1,0 +1,16 @@
+# Render an abstract concept AS its central metaphor, with annotated metaphor->meaning callouts
+
+[Style: Educational cartoon - bright, vibrant colors]
+
+A single striking illustration of '{{metaphor}}' as the literal embodiment of '{{concept}}'.
+Show: {{scene}}.
+Add small annotation callouts with thin leader lines that map the metaphor to its meaning:
+callout 1 reads '{{map_1}}';
+callout 2 reads '{{map_2}}';
+callout 3 reads '{{map_3}}'.
+
+Technical requirements:
+- One clear focal point
+- Bright, warm lighting
+- Clean educational illustration, minimal text clutter outside the callouts
+- No photorealism
