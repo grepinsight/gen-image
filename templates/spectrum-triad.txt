@@ -1,0 +1,15 @@
+# Three-point spectrum/triad comparison (e.g. fragile/robust/antifragile) with one figure per column
+
+[Style: Infographic diagram - clean and organized]
+
+A three-column infographic titled '{{title}}'.
+LEFT column, header '{{low_label}} — {{low_behavior}}': {{low_scene}}. Caption: '{{low_caption}}'.
+CENTER column, header '{{mid_label}} — {{mid_behavior}}': {{mid_scene}}. Caption: '{{mid_caption}}'.
+RIGHT column, header '{{high_label}} — {{high_behavior}}': {{high_scene}}. Caption: '{{high_caption}}'.
+Color-grade the columns red (left) through neutral gray-blue (center) to vivid green (right).
+A horizontal gradient arrow along the bottom labeled '{{axis_label}} →' pointing left to right.
+
+Technical requirements:
+- Flat infographic style, bold legible column headers and captions
+- Clean sans-serif typography, minimal clutter
+- No photorealism

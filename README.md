@@ -139,6 +139,15 @@ gen-image --template mnemonic-vocab \
 gen-image --edit-template my-custom-template   # create/edit in $EDITOR
 ```
 
+Built-in templates include `educational-metaphor`, `mnemonic-vocab`,
+`visual-comparison`, and three tuned for transcript/podcast-derived visuals:
+
+- `spectrum-triad` — a three-point spectrum (e.g. fragile/robust/antifragile), one figure per column.
+- `metaphor-mapping` — render an abstract concept as its central metaphor, with annotated metaphor→meaning callouts.
+- `thought-experiment` — two diverging outcomes under a shared setup banner (e.g. ensemble vs time average).
+
+Run `gen-image --show-template <name>` to see each one's required `--var` slots.
+
 ### Options
 
 ```bash

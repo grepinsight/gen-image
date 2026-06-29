@@ -3,6 +3,17 @@
 All notable changes to gen-image are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com); this project uses semantic versioning.
 
+## [0.6.0]: 2026-06-29
+
+### Added
+- Three built-in prompt templates aimed at transcript- and podcast-derived
+  visuals: `spectrum-triad` (three-point spectrum such as
+  fragile/robust/antifragile, one figure per column), `metaphor-mapping`
+  (render an abstract concept as its central metaphor with annotated
+  metaphor->meaning callouts), and `thought-experiment` (two diverging outcomes
+  under a shared setup banner, e.g. ensemble vs time average). Use via
+  `gen-image --template <name> --var key=value ...`.
+
 ## [0.5.0]: 2026-06-28
 
 ### Added

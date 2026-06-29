@@ -1,0 +1,14 @@
+# Two-outcome thought experiment (e.g. ensemble vs time average) sharing one setup banner
+
+[Style: Infographic diagram - clean and organized]
+
+A two-panel 'thought experiment' infographic titled '{{title}}'.
+SETUP banner across the top reads: '{{setup}}'.
+LEFT panel, header '{{left_label}}': {{left_scene}}, ending in the outcome '{{left_outcome}}' (green, trending up).
+RIGHT panel, header '{{right_label}}': {{right_scene}}, ending in the outcome '{{right_outcome}}' (red, trending down).
+Emphasize the stark divergence between the two outcomes with a dividing line down the middle.
+
+Technical requirements:
+- Flat infographic style, bold legible labels and numbers
+- Green for the left/up outcome, red for the right/down outcome
+- Clean, minimal, no photorealism
